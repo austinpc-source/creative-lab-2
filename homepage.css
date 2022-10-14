@@ -21,7 +21,7 @@ body {
 
 .grid-container {
     padding-top: 15px;
-    width: 60%;
+    width: 75%;
     display: flex;
     justify-content: center;
 }
@@ -38,6 +38,18 @@ body {
     height: 70px;
 }
 
+.info-button {
+   background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.info-button:focus {
+    border: none;
+}
 .continue-button {
   background-color: #ddd;
   border: none;
@@ -59,7 +71,7 @@ body {
     font-family: "Montserrat";
     font-weight: 400;
     color: white;
-    justify-content: center;
+    justify-content:center;
     text-align: center;
 }
 
@@ -71,4 +83,21 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   color: white;
   text-align: center;
+}
+
+
+
+
+/*SCREEN CONFIGURATION*/
+@media only screen and (max-width: 400px) {
+.container {
+    width: 100%;
+}
+}
+
+
+@media only screen and (max-device-width: 480px) {
+.container {
+    width: 100%;
+}
 }
