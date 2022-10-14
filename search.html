@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brewery Lookup</title>
+  </head>
+  <body>
+    <div class="header">
+
+    </div>
+    <div class="content">
+      <div class="searchQuery">
+        <form class="" action="/breweryQuery.js" method="post">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" value="Enter city name here">
+          <label for="name">Brewery:</label>
+          <input type="text" id="name" name="name" value="Enter brewery name here">
+          <label for="type">Brewery Type:</label>
+          <input type="text" id="type" name="type" value="Enter brewery type here">
+
+          <button type="submit" name="button">Search</button>
+        </form>
+        <div class="display breweries">
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      Website Developers: Austin Clarke and Caitlin Mastroianni
+      <a href="https://github.com/austinpc-source/creative-lab-2">Click here to see the Github Repository</a>
+    </div>
+    <script src="/breweryQuery.js"></script>
+
+  </body>
+</html>
