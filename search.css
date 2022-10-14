@@ -1,0 +1,12 @@
+#searchQuery {
+  display: flex;
+  justify-content: space-around;
+}
+
+#searchQuery > form {
+  border: 1px solid #000;
+}
+
+#searchQuery > form > label {
+  width: 130px;
+}
