@@ -1,3 +1,101 @@
+body {
+    background: url('search bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-left: 50px;
+}
+
+
+.search-grid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family:  "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 25px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4682B4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #7393B3;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family:  "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 25px;
+}
+
+.container-results {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family:  "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 25px;
+}
+
+
+#searchQuery {
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+  margin-bottom: 50px;
+}
+
 #searchQuery > form {
-  display: none;
+  border:none;
+}
+
+#searchQuery > form > label {
+  font-size: 20px;
+  width: 500px;
+}
+
+#display_breweries{
+    background-color: #f2f2f2;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: black;
+    justify-content:center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  text-align: center;
 }
