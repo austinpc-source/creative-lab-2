@@ -11,18 +11,18 @@
     <div class="container">
         <img src="logo.png" style="margin-top: 50px"/>
         <div class='grid-container'>
-            <p class="text-box">Welcome to BrewerySearch! If you are interested in learning about the brewery for you, click on the buttons below. If you are ready to explore, click the button below. </p>
+            <p class="text-box">Welcome to BrewerySearch!<br> If you are interested in learning about the brewery for you, click on the buttons below.<br> If you are ready to explore, search searching below. </p>
         </div>
         <div class='grid-container'>
             <div class='button-grid'>
                 <div class='button-grid-item'>
-                    <img id="visible" src='button.png'/>
+                    <button class='info-button' onclick="toggleText1()"><img src='button.png'/></button>
                 </div>
                 <div class='button-grid-item'>
-                    <img src='button.png'/>
+                    <button class='info-button' onclick="toggleText2()"><img src='button.png'/></button>
                 </div>
                 <div class='button-grid-item'>
-                    <img src='button.png'/>
+                    <button class='info-button' onclick="toggleText3()"><img src='button.png'/></button>
                 </div>
             </div>
         </div>
@@ -30,14 +30,44 @@
             <button class="continue-button">Search for a Brewery</button>
         </div>
         <div class='grid-container'>
-            <p id="invisible" class="hide" style="color:white"> See me now!</p>
+          <p class="text-box" id='demo' style='display: none'>WHAT ARE BREWERIES? <br><br> A brewery or brewing company is a business that makes and sells beer. The place at which beer is commercially made is either called a brewery or a beerhouse, where distinct sets of brewing equipment are called plant. The commercial brewing of beer has taken place since at least 2500 BC;in ancient Mesopotamia, brewers derived social sanction and divine protection from the goddess Ninkasi. Brewing was initially a cottage industry, with production taking place at home; by the ninth century, monasteries and farms would produce beer on a larger scale, selling the excess; and by the eleventh and twelfth centuries larger, dedicated breweries with eight to ten workers were being built.</p>
+          <p class="text-box" id='demo2' style='display: none'>BREWERY TYPES<br><br>Most breweries can be broken down into several different types of breweries, though they can sometimes fit into multiple categories:<br><br> Craft brewery<br> Macro brewery<br> Microbrewery<br> Nano brewery<br> Brewpub/Taproom<br> Farm Brewery<br> Contract Brewing Company</p> 
+          <p class="text-box" id='demo3' style='display: none'>QUICK TIPS<br><br> Step out of your comfort zone!<br>Taste at least one thing you haven’t tried before and you might surprise yourself or learn something new! Keep an open mind, ask questions and let your hosts recommend beers for you based on what you already know you like.<br><br>Make it a social event!<br>Go with friends and maybe make a few new ones!<br><br>   Always do the brewery tour if there is one available<br>Make the most of your time there and learn some fun facts! See Brewery Tour Tips below!  <br><br>Enjoy and savor your beer!  <br> You may become a beer connoisseur before you know it!  <br><br></p> 
         </div>
     </div>
-    
 
     <div class="footer">
         Website Developers: Austin Clarke and Caitlin Mastroianni
         <a href="https://github.com/austinpc-source/creative-lab-2">Click here to see the Github Repository</a>
     </div>
+    
   </body>
 </html>
+
+<script>
+function toggleText1() {
+  var text = document.getElementById("demo");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+function toggleText2() {
+  var text = document.getElementById("demo2");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+function toggleText3() {
+  var text = document.getElementById("demo3");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+</script>
