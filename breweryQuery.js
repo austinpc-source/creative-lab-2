@@ -81,12 +81,41 @@ document.getElementById('randomize').addEventListener('click', function(event) {
 
 document.getElementById('multiple').addEventListener('click', function (event) {
   event.preventDefault();
-  document.getElementById('randomOptions').style.display = 'none';
-  document.getElementById('listOptions').style.display = 'block';
-});
 
-document.getElementById('random').addEventListener('click', function (event) {
-  event.preventDefault();
-  document.getElementById('listOptions').style.display = 'none';
-  document.getElementById('randomOptions').style.display = 'block';
+  let queryForm = document.getElementById('listOptions');
+  let btn = document.getElementById('submit');
+  queryForm.innerHTML = "";
+  let cityLabel = document.createElement('label');
+  cityLabel.setAttribute('for', 'city');
+  cityLabel.innerHTML = 'City:';
+  queryForm.appendChild(cityLabel);
+  let cityInput = document.createElement('input');
+  cityInput.setAttribute('id', 'city');
+  cityInput.setAttribute('type', 'text');
+  cityInput.setAttribute('name', 'city');
+  cityInput.setAttribute('value', '');
+  queryForm.appendChild(cityInput);
+
+  let nameLabel = document.createElement('label');
+  nameLabel.setAttribute('for', 'city');
+  nameLabel.innerHTML = 'Brewery:';
+  queryForm.appendChild(nameLabel);
+  let nameInput = document.createElement('input');
+  nameInput.setAttribute('id', 'name');
+  nameInput.setAttribute('type', 'text');
+  nameInput.setAttribute('name', 'name');
+  nameInput.setAttribute('value', '');
+  queryForm.appendChild(nameInput);
+
+  let typeLabel = document.createElement('label');
+  typeLabel.setAttribute('for', 'city');
+  typeLabel.innerHTML = 'Brewery Type:';
+  queryForm.appendChild(typeLabel);
+  let typeInput = document.createElement('input');
+  typeInput.setAttribute('id', 'type');
+  typeInput.setAttribute('type', 'text');
+  typeInput.setAttribute('name', 'type');
+  typeInput.setAttribute('value', '');
+  queryForm.appendChild(typeInput);
+  queryForm.appendChild(btn);
 });
