@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Brewery Lookup</title>
-    <link rel='stylesheet' href='styles.css'/>
+    <link rel='stylesheet' href='homepage.css'/>
 </head>
 
   </head>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class='grid-container'>
-            <button class="continue-button">Search for a Brewery</button>
+          <a href="search.html"><button class="continue-button">Search for a Brewery</button></a>
         </div>
         <div class='grid-container'>
           <p class="text-box" id='demo' style='display: none'>WHAT ARE BREWERIES? <br><br> A brewery or brewing company is a business that makes and sells beer. The place at which beer is commercially made is either called a brewery or a beerhouse, where distinct sets of brewing equipment are called plant. The commercial brewing of beer has taken place since at least 2500 BC;in ancient Mesopotamia, brewers derived social sanction and divine protection from the goddess Ninkasi. Brewing was initially a cottage industry, with production taking place at home; by the ninth century, monasteries and farms would produce beer on a larger scale, selling the excess; and by the eleventh and twelfth centuries larger, dedicated breweries with eight to ten workers were being built.</p>
@@ -46,6 +46,8 @@
 
 <script>
 function toggleText1() {
+  document.getElementById("demo2").style.display = "none";
+  document.getElementById("demo3").style.display = "none";
   var text = document.getElementById("demo");
   if (text.style.display === "none") {
     text.style.display = "block";
@@ -54,6 +56,8 @@ function toggleText1() {
   }
 }
 function toggleText2() {
+  document.getElementById("demo").style.display = "none";
+  document.getElementById("demo3").style.display = "none";
   var text = document.getElementById("demo2");
   if (text.style.display === "none") {
     text.style.display = "block";
@@ -62,6 +66,8 @@ function toggleText2() {
   }
 }
 function toggleText3() {
+  document.getElementById("demo").style.display = "none";
+  document.getElementById("demo2").style.display = "none";
   var text = document.getElementById("demo3");
   if (text.style.display === "none") {
     text.style.display = "block";
