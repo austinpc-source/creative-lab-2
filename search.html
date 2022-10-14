@@ -6,42 +6,43 @@
     <link rel="stylesheet" href="search.css">
   </head>
   <body>
-    <div class="header">
-
+      
+    <div class="search-grid">
+        <img src="logo.png" style="margin-top: 50px; margin-bottom: 50px; justify-content:center;"/>
     </div>
-    <div class="content">
-      <div id="searchType">
-        <form class="searchPreference" action="breweryQuery.js" method="post">
-          <input type="radio" id="multiple" name="multiple" value="List Breweries">
-          <label for="multiple">List Breweries</label><br>
-          <input type="radio" id="random" name="random" value="Random Brewery">
-          <label for="random">Random Brewery</label><br>
-        </form>
-      </div>
-      <div id="searchQuery">
-        <form id="listOptions" action="breweryQuery.js" method="post">
-          <label for="type">Brewery Type:</label>
-          <input type="text" id="type" name="type" value=""><br>
-          <label for="name">Brewery Name:</label>
-          <input type="text" id="name" name="name" value=""><br>
-          <label for="city">City:</label>
-          <input type="text" id="city" name="city" value=""><br>
-          <label for="state">State:</label>
-          <input type="text" id="state" name="state" value=""><br>
+    <div class="search-grid">
+        <div class="container">
+            <div id="searchQuery">
+                <form id="listOptions" action="breweryQuery.js" method="post">
+                    <label for="type">Brewery Type:</label>
+                    <input type="text" id="type" name="type" value="" placeholder="Enter Brewery Type">
+                    <label for="name">Brewery Name:</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Enter Brewery Name">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" value="" placeholder="Enter a City">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" value="" placeholder="Enter a State">
+                    
+                    <button type="submit" id="submit" name="button">Search</button>
+                </form>
+                </div>
+                <div id="searchQuery">
+                <form id="randomOptions" action="breweryQuery.js" method="post">
+                    <label for="type">Random List Size:</label>
+                    <input type="text" id="size" name="size" value="">
+                    <button type="button" id="randomize" name="button">Random Brewery</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-          <button type="submit" id="submit" name="button">Search</button><br>
-        </form>
-        <form id="randomOptions" action="breweryQuery.js" method="post">
-          <label for="type">Random List Size:</label>
-          <input type="text" id="size" name="size" value=""><br>
-          <button type="button" id="randomize" name="button">Random Brewery</button>
-        </form>
-      </div>
+    <div><br><br></div>
 
+    <div class="search-grid">
       <div id="display_breweries">
-
       </div>
     </div>
+    
     <div class="footer">
       Website Developers: Austin Clarke and Caitlin Mastroianni
       <a href="https://github.com/austinpc-source/creative-lab-2">Click here to see the Github Repository</a>
