@@ -9,27 +9,44 @@
 
     </div>
     <div class="content">
-      <div class="searchQuery">
-        <form class="" action="/breweryQuery.js" method="post">
-          <label for="city">City:</label>
-          <input type="text" id="city" name="city" value="Enter city name here">
-          <label for="name">Brewery:</label>
-          <input type="text" id="name" name="name" value="Enter brewery name here">
-          <label for="type">Brewery Type:</label>
-          <input type="text" id="type" name="type" value="Enter brewery type here">
-
-          <button type="submit" name="button">Search</button>
+      <!-- <div id="searchType">
+        <form class="searchPreference" action="breweryQuery.js" method="post">
+          <input type="radio" id="single" name="single" value="Single Brewery">
+          <label for="single">Single Brewery</label><br>
+          <input type="radio" id="multiple" name="multiple" value="List Breweries">
+          <label for="multiple">List Breweries</label><br>
+          <input type="radio" id="random" name="random" value="Random Brewery">
+          <label for="random">Random Brewery</label><br>
         </form>
-        <div class="display breweries">
-          
-        </div>
+      </div> -->
+      <div id="searchQuery">
+        <form id="listOptions" action="breweryQuery.js" method="post">
+          <label for="type">Brewery Type:</label>
+          <input type="text" id="type" name="type" value=""><br>
+          <label for="name">Brewery Name:</label>
+          <input type="text" id="name" name="name" value=""><br>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" value=""><br>
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" value=""><br>
+
+          <button type="submit" id="submit" name="button">Search</button><br>
+        </form>
+        <form id="randomOptions" action="breweryQuery.js" method="post">
+          <label for="type">Random List Size:</label>
+          <input type="text" id="size" name="size" value=""><br>
+          <button type="button" id="randomize" name="button">Random Brewery</button>
+        </form>
+      </div>
+
+      <div id="display_breweries">
+
       </div>
     </div>
     <div class="footer">
       Website Developers: Austin Clarke and Caitlin Mastroianni
       <a href="https://github.com/austinpc-source/creative-lab-2">Click here to see the Github Repository</a>
     </div>
-    <script src="/breweryQuery.js"></script>
-
+    <script src="breweryQuery.js"></script>
   </body>
 </html>
