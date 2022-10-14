@@ -3,18 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Brewery Lookup</title>
+    <link rel='stylesheet' href='styles.css'/>
+</head>
+
   </head>
   <body>
-    <div class="header">
-      <h1>Brewery Search</h1>
+    <div class="container">
+        <img src="logo.png" style="margin-top: 50px"/>
+        <div class='grid-container'>
+            <p class="text-box">Welcome to BrewerySearch! If you are interested in learning about the brewery for you, click on the buttons below. If you are ready to explore, click the button below. </p>
+        </div>
+        <div class='grid-container'>
+            <div class='button-grid'>
+                <div class='button-grid-item'>
+                    <img id="visible" src='button.png'/>
+                </div>
+                <div class='button-grid-item'>
+                    <img src='button.png'/>
+                </div>
+                <div class='button-grid-item'>
+                    <img src='button.png'/>
+                </div>
+            </div>
+        </div>
+        <div class='grid-container'>
+            <button class="continue-button">Search for a Brewery</button>
+        </div>
+        <div class='grid-container'>
+            <p id="invisible" class="hide" style="color:white"> See me now!</p>
+        </div>
     </div>
-    <div class="content">
-      <h2>What is a brewery?</h2>
-      <h2>Types of breweries</h2>
-    </div>
+    
+
     <div class="footer">
-      Website Developers: Austin Clarke and Caitlin Mastroianni
-      <a href="https://github.com/austinpc-source/creative-lab-2">Click here to see the Github Repository</a>
+        Website Developers: Austin Clarke and Caitlin Mastroianni
+        <a href="https://github.com/austinpc-source/creative-lab-2">Click here to see the Github Repository</a>
     </div>
   </body>
 </html>
