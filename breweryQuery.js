@@ -5,27 +5,27 @@ function breweryObject(json) {
   brewery.appendChild(name);
 
   let type = document.createElement('p');
-  type.innerHTML = json.brewery_type;
+  type.innerHTML = "Type: " +json.brewery_type;
   brewery.appendChild(type);
 
   let street = document.createElement('p');
-  street.innerHTML = json.street;
+  street.innerHTML = "Addresss: "+ json.street;
   brewery.appendChild(street);
 
   let city = document.createElement('p');
-  city.innerHTML = json.city + ", " + json.state + " " + json.postal_code + " " + json.country;
+  city.innerHTML =  json.city + ", " + json.state + " " + json.postal_code + " " + json.country;
   brewery.appendChild(city);
 
   let phone = document.createElement('p');
-  phone.innerHTML = json.phone;
+  phone.innerHTML = "Phone Number: " + json.phone;
   brewery.appendChild(phone);
 
   let website = document.createElement('a');
   website.innerHTML = "Website"
   website.href = json.website_url;
   brewery.appendChild(website);
-
-  return brewery;
+  
+  return brewery ;
 }
 
 function getData(url) {
