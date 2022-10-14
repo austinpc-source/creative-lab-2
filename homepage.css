@@ -1,0 +1,74 @@
+body {
+    background: url('home bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container img{
+    width: 100%;
+}
+
+.grid-container {
+    padding-top: 15px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-grid {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-grid-item img{
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 70px;
+    height: 70px;
+}
+
+.continue-button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.text-box {
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  text-align: center;
+}
