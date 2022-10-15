@@ -25,7 +25,7 @@ function breweryObject(json) {
   website.href = json.website_url;
   brewery.appendChild(website);
   
-  return brewery ;
+  return brewery;
 }
 
 function getData(url) {
